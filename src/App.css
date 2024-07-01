@@ -1,0 +1,15 @@
+body{
+  margin: 0;
+}
+.div{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  
+  
+}
+button{
+  padding: 10px;
+  
+}
