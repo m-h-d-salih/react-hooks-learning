@@ -1,15 +1,23 @@
 body{
   margin: 0;
 }
-.div{
-  width: 100%;
-  height: 100vh;
+.container{
   display: flex;
-  justify-content: center;
-  
-  
+  justify-content: space-around;
 }
-button{
-  padding: 10px;
-  
+.child{
+  width:30%;
+}
+.a{
+  background-color: red;
+  height: 500px;
+}
+.b{
+  background-color:lightblue;
+  height: 200px;
+}
+.c{
+  background-color: aqua;
+  height: 500px;
+  width:auto
 }

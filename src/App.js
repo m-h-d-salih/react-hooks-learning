@@ -1,27 +1,23 @@
 
 import { useState } from 'react';
 import './App.css';
-import Some from './props';
+import Child3 from './child3';
 
 function App() {
   
-  
-  const [flag,setFlag]=useState(false);
-  const [color,setColor]=useState('white');
+  const [display,setdisplay]=useState(false)
+  // const name='salih';
+  // const age=20;
+  const obj={
+    name:'salih',
+    age:20
+  }
  return(
-  <>
-  <div className='div' style={{backgroundColor:color}}>
-    <div className='item'>
-  <button onClick={()=>{
-   setColor(flag?'white':'black')
-   setFlag(!flag)
-   
-    
-  }} >Switch theme</button>
-    <Some name='salih' />
+  <div className='container'>
+ <div className='child a' onClick={()=>setdisplay(!display)}><h1>{display ? obj.name:obj.age}</h1></div>
+ <div className='child b'> 2</div>
+ <Child3 setdisplay={setdisplay} display={display} obj={obj}/>
   </div>
-  </div>
-  </>
  )
 }
 
